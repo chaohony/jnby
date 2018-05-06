@@ -1,0 +1,14 @@
+* {
+  color: #0f0;
+  font-size: 29px;
+  flex: 1;
+}
+#root {
+  color: #0f0;
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 1 0;
+  .name {
+    color: #f00;
+  }
+}
