@@ -104,8 +104,8 @@ var update = __webpack_require__(4)(content, options);
 if(content.locals) module.exports = content.locals;
 
 if(false) {
-	module.hot.accept("!!../node_modules/_css-loader@0.28.11@css-loader/index.js!../node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!./main.css", function() {
-		var newContent = require("!!../node_modules/_css-loader@0.28.11@css-loader/index.js!../node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!./main.css");
+	module.hot.accept("!!../node_modules/_css-loader@0.28.11@css-loader/index.js!../node_modules/_sass-loader@7.0.1@sass-loader/lib/loader.js!./main.scss", function() {
+		var newContent = require("!!../node_modules/_css-loader@0.28.11@css-loader/index.js!../node_modules/_sass-loader@7.0.1@sass-loader/lib/loader.js!./main.scss");
 
 		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 
@@ -139,7 +139,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "* {\n  color: #0f0;\n  font-size: 29px;\n  flex: 1;\n}\n#root {\n  color: #0f0;\n  display: flex;\n  flex-flow: column nowrap;\n  flex: 1 1 0;\n}\n", ""]);
+exports.push([module.i, ".test {\n  width: 200px;\n  height: 50px;\n  margin: 50px auto;\n  font-size: 18px;\n  color: #f00;\n  text-align: center;\n  line-height: 50px;\n  transition: color .3s ease-in-out;\n  position: relative;\n  border: 1px solid #f00; }\n  .test:after {\n    display: block;\n    content: '';\n    position: absolute;\n    z-index: -1;\n    left: 0;\n    right: 0;\n    top: 0;\n    bottom: 0;\n    background: #f00;\n    transform: scaleX(0);\n    transition: transform .3s linear;\n    transform-origin: 0 50%; }\n\n.test:hover, .test:active, .test:focus {\n  color: #fff; }\n\n.test:hover:after {\n  transform: scaleX(1); }\n", ""]);
 
 // exports
 

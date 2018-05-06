@@ -1,14 +1,33 @@
-* {
-  color: #0f0;
-  font-size: 29px;
-  flex: 1;
-}
-#root {
-  color: #0f0;
-  display: flex;
-  flex-flow: column nowrap;
-  flex: 1 1 0;
-  .name {
-    color: #f00;
+.test {
+  // background-color: #69c;
+  width: 200px;
+  height: 50px;
+  margin: 50px auto;
+  font-size: 18px;
+  color: #f00;
+  text-align: center;
+  line-height: 50px;
+  transition: color .3s ease-in-out;
+  position: relative;
+  border: 1px solid #f00;
+  &:after {
+    display: block;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #f00;
+    transform: scaleX(0);
+    transition: transform .3s linear;
+    transform-origin: 0 50%;
   }
+}
+.test:hover,.test:active,.test:focus {
+  color: #fff;
+}
+.test:hover:after {
+  transform: scaleX(1);
 }
