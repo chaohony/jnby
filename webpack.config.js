@@ -25,7 +25,7 @@ let output = {
 
 // 配置服务器
 let devServer = {
-  contentBase: "./public",
+  contentBase: __dirname + "/public",
   historyApiFallback: true,
   inline: true
 }
@@ -53,6 +53,12 @@ let _module = {
           loader: "postcss-loader"
         }
       ]
+    },
+    {
+      test: /(\.jpg|\.png|\.gif|.jpeg)$/,
+      use: {
+        loader: "url-loader"
+      }
     },
     {
       test: /\.scss$/,
