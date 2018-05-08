@@ -72,14 +72,6 @@
 
 __webpack_require__(1);
 
-var _Greeter = __webpack_require__(6);
-
-var _Greeter2 = _interopRequireDefault(_Greeter);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-document.querySelector("#root").appendChild((0, _Greeter2.default)());
-
 /***/ }),
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -104,8 +96,8 @@ var update = __webpack_require__(4)(content, options);
 if(content.locals) module.exports = content.locals;
 
 if(false) {
-	module.hot.accept("!!../node_modules/_css-loader@0.28.11@css-loader/index.js!../node_modules/_sass-loader@7.0.1@sass-loader/lib/loader.js!./main.scss", function() {
-		var newContent = require("!!../node_modules/_css-loader@0.28.11@css-loader/index.js!../node_modules/_sass-loader@7.0.1@sass-loader/lib/loader.js!./main.scss");
+	module.hot.accept("!!../../node_modules/_css-loader@0.28.11@css-loader/index.js!../../node_modules/_stylus-loader@3.0.2@stylus-loader/index.js!./index.styl", function() {
+		var newContent = require("!!../../node_modules/_css-loader@0.28.11@css-loader/index.js!../../node_modules/_stylus-loader@3.0.2@stylus-loader/index.js!./index.styl");
 
 		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 
@@ -139,7 +131,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, ".test {\n  width: 200px;\n  height: 50px;\n  margin: 50px auto;\n  font-size: 18px;\n  color: #f00;\n  text-align: center;\n  line-height: 50px;\n  transition: color .3s ease-in-out;\n  position: relative;\n  border: 1px solid #f00; }\n  .test:after {\n    display: block;\n    content: '';\n    position: absolute;\n    z-index: -1;\n    left: 0;\n    right: 0;\n    top: 0;\n    bottom: 0;\n    background: #f00;\n    transform: scaleX(0);\n    transition: transform .3s linear;\n    transform-origin: 0 50%; }\n\n.test:hover, .test:active, .test:focus {\n  color: #fff; }\n\n.test:hover:after {\n  transform: scaleX(1); }\n", ""]);
+exports.push([module.i, "html,\nbody,\ndiv,\nspan,\napplet,\nobject,\niframe,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nblockquote,\npre,\na,\nabbr,\nacronym,\naddress,\nbig,\ncite,\ncode,\ndel,\ndfn,\nem,\nimg,\nins,\nkbd,\nq,\ns,\nsamp,\nsmall,\nstrike,\nstrong,\nsub,\nsup,\ntt,\nvar,\nb,\nu,\ni,\ncenter,\ndl,\ndt,\ndd,\nol,\nul,\nli,\nfieldset,\nform,\nlabel,\nlegend,\ntable,\ncaption,\ntbody,\ntfoot,\nthead,\ntr,\nth,\ntd,\narticle,\naside,\ncanvas,\ndetails,\nembed,\nfigure,\nfigcaption,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\noutput,\nruby,\nsection,\nsummary,\ntime,\nmark,\naudio,\nvideo {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n}\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\nsection {\n  display: block;\n}\nbody {\n  line-height: 1;\n}\nol,\nul {\n  list-style: none;\n}\nblockquote,\nq {\n  quotes: none;\n}\nblockquote:before,\nblockquote:after,\nq:before,\nq:after {\n  content: '';\n  content: none;\n}\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n", ""]);
 
 // exports
 
@@ -706,26 +698,6 @@ module.exports = function (css) {
 	return fixedCss;
 };
 
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var config = __webpack_require__(7);
-module.exports = function () {
-  var greet = document.createElement('div');
-  greet.textContent = config.greetText;
-  return greet;
-};
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports) {
-
-module.exports = {"greetText":"Hi there and greetings from JSON!"}
 
 /***/ })
 /******/ ]);
