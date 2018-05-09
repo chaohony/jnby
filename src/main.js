@@ -1,7 +1,7 @@
 import "./styl/index.styl"
 window.onload = function() {
   let h = document.createElement('div')
-  let f = document.createElement('ul')
+  let f = document.createElement('div')
   let header = document.querySelector('.header')
   let footer = document.querySelector('.footer')
 
