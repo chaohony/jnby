@@ -51,9 +51,11 @@ let _module = {
     },
     {
       test: /(\.jpg|\.png|\.gif|.jpeg)$/,
-      use: {
-        loader: "url-loader"
-      }
+      use: [
+        {
+          loader: "url-loader"
+        }
+      ]
     },
     {
       test: /\.scss$/,
