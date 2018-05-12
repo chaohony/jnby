@@ -1,0 +1,53 @@
+* {
+	font-family: theFont;
+}
+a,a:hover,a:link,a:active,a:visited,a:focus {
+	text-decoration: none;
+	color: #fff;
+}
+.header {
+	overflow: hidden;
+	.nav {
+		padding: 64px 0 0 44px;
+		color: #fff;
+		ul {
+			font-size: 0;
+			li {
+				float: left;
+				margin-right: 62px;
+				font-size: 17px;
+				&.lookbook {
+					.lo {
+						margin-top: 8px;
+						font-size: 14px;
+						line-height: 18px;
+						&:last-child {
+							margin-top: 0;
+						}
+					}
+				}
+				&.projects {
+					width: 89px;
+					.lo {
+						margin-top: 8px;
+						line-height: 18px;
+						font-size: 14px;
+						white-space: nowrap;
+						&:first-of-type {
+							margin-top: 8px;
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+					
+.header .logo {
+	position: fixed;
+	top: 65px;
+	right: 59px;
+	width: 233px;
+	height: 79px;
+}
