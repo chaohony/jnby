@@ -1,0 +1,112 @@
+#page6 {
+    color: #000;
+
+    .header {
+        .nav {
+            li {
+                color: #000;
+            }
+        }
+    }
+
+    .article {
+        padding: 0 44px;
+        font-size: 0;
+        .location {
+            margin: 12px 0 100px 0;
+            font-size: 17px;
+            line-height: 17px;
+        }
+        .intro {
+            margin-bottom: 113px;
+            img {
+                width: 224px;
+                height: 146px;
+                vertical-align: top;
+            }
+            .intro {
+                padding-left: 60px;
+                display: inline-block;
+                width: 820px;
+                vertical-align: top;
+                .ch {
+                    font-size: 20px;
+                    margin-bottom: 28px;
+                    line-height: 29px;
+                }
+                .en {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+        }
+        .img-group {
+            font-size: 0;
+            .block {
+                width: 33.3%;
+                position: relative;
+                display: inline-block;
+                &.block1 {
+                    color: #c80012;
+                }
+                &.block2 {
+                    color: #ffc400;
+                }
+                &.block3 {
+                    color: #8200ff;
+                }
+                &.block4 {
+                    color: #ff82b5;
+                }
+                &.block5 {
+                    color: #0000ff;
+                }
+                &.block6 {
+                    color: #ff3300;
+                }
+                h4 {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    font-size: 90px;
+                    z-index: 1;
+                    text-align: center;
+                    transform: translate3d(-50%,-50%,0);
+                }
+                p {
+                    position: absolute;
+                    text-align: center;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    bottom: 20px;
+                    font-size: 35px;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+        }
+          
+    }
+    
+    .footer {
+        text-align: center;
+        margin-top: 247px;
+        margin-bottom: 146px;
+        .f {
+            display: inline-block;
+            font-size: 17px;
+            color: #000;
+            li {
+                float: left;
+                margin-right: 115px;
+            }
+        }
+    }
+        
+    a,a:hover,a:link,a:active,a:visited,a:focus {
+        text-decoration: none;
+        color: #000;
+    }
+}

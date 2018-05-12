@@ -1,0 +1,93 @@
+#page8 {
+    color: #000;
+
+    .header {
+        .nav {
+            li {
+                color: #000;
+            }
+        }
+    }
+
+    .article {
+        padding: 0 44px;
+        .location {
+            font-size: 17px;
+            line-height: 27px;
+            margin: 12px 0 100px 0;
+        }
+        .container {
+            .container-floor1 {
+                margin-bottom: 60px;
+                .floor1-left {
+                    display: inline-block;
+                    width: 520px;
+                    div {
+                        text-align: right;
+                        img {
+                            width: 245px;
+                        }
+                    }
+                    img {
+                        width: 100%;
+                    }
+                }
+                .floor1-right {
+                    display: inline-block;
+                    padding-left: 68px;
+                    width: 824px;
+                    .ch {
+                        font-size: 20px;
+                        line-height: 29px;
+                        margin-bottom: 28px;
+                    }
+                    .en {
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+            }
+            .container-floor2 {
+                font-size: 0;
+                .img-group {
+                    width: 50%;
+                    display: inline-block;
+                    position: relative;
+                    h3 {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate3d(-50%,-50%,0);
+                        color: #66ffbf;
+                        z-index: 1;
+                        font-size: 90px;
+                        white-space: nowrap;
+                    }
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+    .footer {
+        text-align: center;
+        margin-top: 247px;
+        margin-bottom: 146px;
+        .f {
+            display: inline-block;
+            font-size: 17px;
+            color: #000;
+            li {
+                float: left;
+                margin-right: 115px;
+            }
+        }
+    }
+        
+    a,a:hover,a:link,a:active,a:visited,a:focus {
+        text-decoration: none;
+        color: #000;
+    }
+}

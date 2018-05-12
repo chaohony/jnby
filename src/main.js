@@ -8,21 +8,21 @@ import "./styl/index.scss"
   header.appendChild(h)
   footer.appendChild(f)
 
-  // function toggleClass(e) {
-  //   if(!e) return
-  //   let nameS = e.className.split('')
-  //   let num = nameS[nameS.length-1]
-  //   num = Number(num) + 1 > 4 ? 1 : Number(num) + 1
-  //   nameS.splice(2,1,num)
-  //   return nameS.join('')
-  // }
+  function toggleClass(e) {
+    if(!e) return
+    let nameS = e.className.split('')
+    let num = nameS[nameS.length-1]
+    num = Number(num) + 1 > 4 ? 1 : Number(num) + 1
+    nameS.splice(2,1,num)
+    return nameS.join('')
+  }
 
-  // ((d) => {
-  //   let timer = setInterval(() => {
-  //     if(!d) return
-  //     d.className = toggleClass(d)
-  //   }, 3000)
-  // })(document.getElementById('page1'))
+  ((d) => {
+    let timer = setInterval(() => {
+      if(!d) return
+      d.className = toggleClass(d)
+    }, 3000)
+  })(document.getElementById('page1'))
 
   function sliderImg(c, duration) {
     if(!c) return
@@ -43,7 +43,7 @@ import "./styl/index.scss"
     })
   }
 
-  sliderImg(document.getElementsByClassName('view-window')[0], 6000)
+  sliderImg(document.getElementsByClassName('view-window')[0], 4000)
   setTimeout(() => {
-    sliderImg(document.getElementsByClassName('view-window')[1], 6000)
+    sliderImg(document.getElementsByClassName('view-window')[1], 4000)
   }, 3000)
