@@ -1,0 +1,58 @@
+#page4 {
+    color: #000;
+
+    .header {
+        .nav {
+            li {
+                color: #000;
+            }
+        }
+    }
+
+    .article {
+        padding: 0 44px;
+        font-size: 0;
+        .location {
+            margin: 12px 0 102px 0;
+            font-size: 17px;
+        }
+        .img-group {
+            display: inline-block;
+            width: 25%;
+            padding-right: 24px;
+            box-sizing: border-box;
+            img {
+                width: 100%;
+            }
+            .t-shirt {
+                margin-top: 13px;
+                font-size: 14px;
+                line-height: 27px;
+            }
+            .pant {
+                font-size: 14px;
+                margin-bottom: 26px;
+            }
+        }
+    }
+    
+    .footer {
+        text-align: center;
+        margin-top: 2470;
+        margin-bottom: 1460;
+        .f {
+            display: inline-block;
+            font-size: 170;
+            color: #000;
+            li {
+                float: left;
+                margin-right: 1150;
+            }
+        }
+    }
+        
+    a,a:hover,a:link,a:active,a:visited,a:focus {
+        text-decoration: none;
+        color: #000;
+    }
+}

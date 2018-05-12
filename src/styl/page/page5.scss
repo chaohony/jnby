@@ -1,0 +1,61 @@
+#page5 {
+    color: #000;
+
+    .header {
+        .nav {
+            li {
+                color: #000;
+            }
+        }
+    }
+
+    .article {
+        padding: 0 44px;
+        font-size: 0;
+        .location {
+            margin: 12px 0 102px 0;
+            font-size: 17px;
+        }
+        .container {
+            display: flex;
+            .img {
+                width: 40%;
+                img {
+                    width: 100%;
+                }
+            }
+            .text-introduction {
+                display: flex;
+                flex: 1;
+                padding-left: 127px;
+                flex-flow: column nowrap;
+                justify-content: space-between;
+                font-size: 16px;
+                .ch {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+          
+    }
+    
+    .footer {
+        text-align: center;
+        margin-top: 2470;
+        margin-bottom: 1460;
+        .f {
+            display: inline-block;
+            font-size: 17px;
+            color: #000;
+            li {
+                float: left;
+                margin-right: 1150;
+            }
+        }
+    }
+        
+    a,a:hover,a:link,a:active,a:visited,a:focus {
+        text-decoration: none;
+        color: #000;
+    }
+}
