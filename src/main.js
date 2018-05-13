@@ -1,4 +1,6 @@
 import "./styl/index.scss"
+  let state = {}
+  let timer
   let h = document.createElement('div')
   let f = document.createElement('div')
   let header = document.querySelector('.header')
@@ -8,6 +10,16 @@ import "./styl/index.scss"
   header.appendChild(h)
   footer.appendChild(f)
 
+  window.onresize = function() {
+    clearTimeout(timer)
+    clearTimeout(state.vTimer)
+    clearTimeout(state.hTimer)
+    timer = setTimeout(() => {
+      run()
+    }, 200)
+  }
+
+  
   function toggleClass(e) {
     if(!e) return
     let nameS = e.className.split('')
@@ -24,15 +36,23 @@ import "./styl/index.scss"
     }, 3000)
   })(document.getElementById('page1'))
 
-  function sliderImg(c, duration) {
+  function sliderImg(c, duration, f) {
     if(!c) return
     let i = 0
     let imgs = c.getElementsByTagName('img')
+    let width = imgs[0].clientWidth
     let height = imgs[0].clientHeight
-    let timer = setInterval(() => {
-      c.style.transition = `transform .5s ease-in-out`
-      c.style.transform = `translate3d(0, ${-height * (i+1)}px, 0)`
-    }, duration)
+    if(f === 'h') {
+      state.hTimer = setInterval(() => {
+        c.style.transition = `transform .5s ease-in-out`
+        c.style.transform = `translate3d(${-width * (i+1)}px, 0, 0)`
+      }, duration)
+    } else {
+      state.vTimer = setInterval(() => {
+        c.style.transition = `transform .5s ease-in-out`
+        c.style.transform = `translate3d(0, ${-height * (i+1)}px, 0)`
+      }, duration)
+    }
     c.addEventListener('transitionend', () => {
       i++
       if(i === 2) {
@@ -43,7 +63,18 @@ import "./styl/index.scss"
     })
   }
 
-  sliderImg(document.getElementsByClassName('view-window')[0], 4000)
-  setTimeout(() => {
-    sliderImg(document.getElementsByClassName('view-window')[1], 4000)
-  }, 3000)
+  function run() {
+    clearTimeout(state.hTimer)
+    clearTimeout(state.vTimer)
+    let v0 = document.getElementsByClassName('view-window')[0]
+    let v1 = document.getElementsByClassName('view-window')[1]
+    v0.style.transform = `translate3d(0,0,0)`
+    v1.style.transform = `translate3d(0,0,0)`
+    sliderImg(v0, 5000, 'h')
+    setTimeout(() => {
+      sliderImg(v1, 5000, 'v')
+    }, 3000)
+  }
+  run()
+  
+

@@ -19,16 +19,18 @@
     &.bg4 {
         background-image: url('../image/page1/bg4.jpg');
     }
+
     .footer {
+        margin: 0;
         position: fixed;
-        bottom: 68px;
+        bottom: 34px;
         left: 0;
         right: 0;
         text-align: center;
         .f {
             display: inline-block;
             font-size: 17px;
-            color: #000;
+            color: #fff;
             li {
                 float: left;
                 margin-right: 115px;
