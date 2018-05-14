@@ -18,34 +18,34 @@ a,a:hover,a:link,a:active,a:visited,a:focus {
 	overflow: hidden;
 	position: relative;
 	.nav {
-		padding: 6.4rem 0 0 4.4rem;
+		padding: 32px 0 0 44px;
 		color: #fff;
 		ul {
 			font-size: 0;
 			li {
 				float: left;
-				margin-right: 3.2rem;
-				font-size: 1.7rem;
+				margin-right: 32px;
+				font-size: 17px;
 				&.lookbook {
 					.lo {
-						margin-top: .4rem;
-						font-size: 1.4rem;
-						line-height: 1.8rem;
+						margin-top: 4px;
+						font-size: 12px;
+						line-height: 18px;
 						&:last-child {
 							margin-top: 0;
 						}
 					}
 				}
 				&.projects {
-					width: 9rem;
+					width: 90px;
 					.lo {
-						margin-top: .4rem;
-						line-height: 1.8rem;
-						font-size: 1.4rem;
+						margin-top: 4px;
+						line-height: 18px;
+						font-size: 12px !important;
 						white-space: nowrap;
 						&:first-of-type {
-							margin-top: .8rem;
-							font-size: 1.4rem;
+							margin-top: 8px;
+							font-size: 14px;
 						}
 					}
 				}
@@ -53,11 +53,29 @@ a,a:hover,a:link,a:active,a:visited,a:focus {
 		}
 	}
 }
+.footer {
+	text-align: center;
+	margin-top: 70px;
+	margin-bottom: 30px;
+	.f {
+			display: inline-block;
+			font-size: 17px;
+			color: #000;
+			li {
+					float: left;
+					margin-right: 115px;
+			}
+	}
+}
 
 .header .logo {
 	position: absolute;
-	top: 6.5rem;
-	right: 5.9rem;
-	width: 23.3rem;
-	height: 8rem;
+	top: 32px;
+	right: 59px;
+	width: 233px;
+	height: 80px;
+}
+
+.hide {
+	display: none;
 }

@@ -9,65 +9,62 @@
     }
     .article {
         margin-top: 12px;
-        margin-left: 44px;
         font-size: 17px;
+        .location {
+            margin-left: 44px;
+        }
         .section-1 {
-            margin-top: 100px;
+            margin-top: 50px;
             text-align: center;
             font-size: 0;
+            display: flex;
+            padding: 0 44px;
+            justify-content: space-between;
             .img-group-left {
                 display: inline-block;
-                margin-right: 25px;
-                width: 600px;
-                height: 900px;
+                width: 47%;
                 overflow: hidden;
                 .view-window {
-                    transition: transform .5s ease-in-out;
+                    transition: transform .5s linear;
+                    white-space: nowrap;
                 }
                 img {
-                    width: 600px;
+                    width: 100%;
                 }
             }
             .img-group-right {
                 display: inline-block;
                 margin-right: 0;
-                width: 600px;
-                height: 900px;
-                overflow: hidden;
-                .view-window {
-                    transition: transform .5s ease-in-out;
-                }
-                img {
-                    width: 600px;
+                width: 47%;
+                .v {
+                    transition: transform .5s linear;
+                    padding-top: 150%;
+                    position: relative;
+                    overflow: hidden;
+                    .view-window {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        left: 0;
+                        bottom: 0;
+                        white-space: wrap;
+                        img {
+                            width: 100%;
+                        }
+                    }
                 }
             }
         }
         .section-2 {
-            margin-top: 280px;
-            text-align: center;
+            margin-top: 70px;
+            padding: 0 44px;
             font-size: 0;
             img {
-                width: 1225px;
+                width: 100%;
             }
         }
     }
 
-    
-    .footer {
-        text-align: center;
-        margin-top: 24.7rem;
-        margin-bottom: 19.5rem;
-        .f {
-            display: inline-block;
-            font-size: 1.7rem;
-            color: #000;
-            li {
-                float: left;
-                margin-right: 11.5rem;
-            }
-        }
-    }
-        
     a,a:hover,a:link,a:active,a:visited,a:focus {
         text-decoration: none;
         color: #000;
