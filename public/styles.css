@@ -205,6 +205,19 @@ a, a:hover, a:link, a:active, a:visited, a:focus {
     text-decoration: none;
     color: #000; }
 
+#page3 {
+  color: #000; }
+  #page3 .header .nav li {
+    color: #000; }
+  #page3 .article {
+    margin-top: 12px;
+    font-size: 17px; }
+    #page3 .article .location {
+      margin-left: 44px; }
+  #page3 a, #page3 a:hover, #page3 a:link, #page3 a:active, #page3 a:visited, #page3 a:focus {
+    text-decoration: none;
+    color: #000; }
+
 #page4 {
   color: #000; }
   #page4 .header .nav li {
