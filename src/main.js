@@ -1,4 +1,4 @@
-import "./styl/index.scss"
+import "./scss/index.scss"
   let state = {}
   let timer
   let h = document.createElement('div')
