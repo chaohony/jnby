@@ -5,7 +5,7 @@ import "./styl/index.scss"
   let f = document.createElement('div')
   let header = document.querySelector('.header')
   let footer = document.querySelector('.footer')
-  h.innerHTML = `<nav class="nav"><ul><li class="collection"><a href="#">COLLECTION</a></li><li class="campaign"><a href="#">CAMPAIGN</a></li><li class="lookbook"><a href="#">LOOKBOOK</a><div class="lo">AW 18</div><div class="lo">SS 18</div></li><li class="brand-story"><a href="#">BRAND STORY</a></li><li class="projects"><a href="#">PROJECTS</a><div class="lo">IS THAT YOU<div>寻人启事</div></div><div class="lo">PARENT - CHILD CLUB<div>亲子俱乐部</div></div><div class="lo">IT'S DIFFERENT BUT FUNNY<div>不一样才好玩</div></div></li><li class="contact"><a href="#">CONTACT</a></li><li class="stores"><a href="#">STORES</a></li></ul></nav>`
+  h.innerHTML = `<nav class="nav"><ul class="ul"><li class="collection"><a href="#">COLLECTION</a></li><li class="campaign"><a href="#">CAMPAIGN</a></li><li class="lookbook"><a href="#">LOOKBOOK</a><div class="lo">AW 18</div><div class="lo">SS 18</div></li><li class="brand-story"><a href="#">BRAND STORY</a></li><li class="projects"><a href="#">PROJECTS</a><div class="lo">IS THAT YOU<div>寻人启事</div></div><div class="lo">PARENT - CHILD CLUB<div>亲子俱乐部</div></div><div class="lo">IT'S DIFFERENT BUT FUNNY<div>不一样才好玩</div></div></li><li class="contact"><a href="#">CONTACT</a></li><li class="stores"><a href="#">STORES</a></li></ul><div class="ballon"><span class="one"></span><span class="two"></span><span class="three"></span></div></nav>`
   f.innerHTML = `<ul class="f"><li>@ 2018 Pomme de terre</li><li>INSTAGRAM</li><li>WEIBO</li><li>WECHAT</li></ul>`
   header.appendChild(h)
   footer.appendChild(f)
@@ -19,6 +19,25 @@ import "./styl/index.scss"
     }, 200)
   }
 
+  let d = document.querySelector('.ballon')
+  let c = document.querySelector('.ul')
+  d.addEventListener('click', toggleNav)
+
+  function toggleNav(e) {
+    e.stopPropagation()
+    let className = d.className
+    let className_1 = c.className
+    if(className.indexOf('active') >= 0) {
+      className = className.replace('active', '').trim()
+      className_1 = className_1.replace('down', '').trim()
+    } else {
+      className = className + ' active'
+      className_1 = className_1 + ' down'
+    }
+    d.className = className
+    c.className = className_1
+  }
+  
   
   function toggleClass(e) {
     if(!e) return
@@ -37,7 +56,7 @@ import "./styl/index.scss"
   })(document.getElementById('page1'))
 
   function sliderImg(c, duration, f) {
-    if(!c) return
+    if(!c || !c.style) return
     let i = 0
     let imgs = c.getElementsByTagName('img')
     let width = imgs[0].clientWidth
@@ -68,6 +87,7 @@ import "./styl/index.scss"
     clearTimeout(state.vTimer)
     let v0 = document.getElementsByClassName('view-window')[0]
     let v1 = document.getElementsByClassName('view-window')[1]
+    if(!v0 || !v0.style) return
     v0.style.transform = `translate3d(0,0,0)`
     v1.style.transform = `translate3d(0,0,0)`
     sliderImg(v0, 5000, 'h')
