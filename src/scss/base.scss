@@ -13,6 +13,7 @@ html {
 a,a:hover,a:link,a:active,a:visited,a:focus {
 	text-decoration: none;
 	color: #fff;
+	cursor: pointer;
 }
 .header {
 	overflow: hidden;
@@ -20,12 +21,18 @@ a,a:hover,a:link,a:active,a:visited,a:focus {
 	.nav {
 		padding: 32px 0 0 44px;
 		color: #fff;
+		@media only screen and (max-width: 1200px) {
+			padding: 16px 0 0 22px;
+		}
 		ul {
 			font-size: 0;
 			li {
 				float: left;
 				margin-right: 32px;
 				font-size: 17px;
+				@media only screen and (max-width: 1200px) {
+					font-size: 12px;
+				}
 				&.lookbook {
 					.lo {
 						margin-top: 4px;
@@ -51,6 +58,74 @@ a,a:hover,a:link,a:active,a:visited,a:focus {
 				}
 			}
 		}
+		@media only screen and (max-width: 768px) {
+			padding: 0;
+			position: relative;
+			z-index: 2;
+			ul {
+				transition: transform .3s ease-in-out;
+				transform: translate3d(0,-100%,0);
+				&.down {
+					transform: translate3d(0,0,0);
+				}
+				overflow: hidden;
+				li {
+					margin-right: 0;
+					font-size: 17px;
+					width: 100%;
+					height: 30px;
+					line-height: 30px;
+					background-color: rgba(0,0,0,.5);
+					color: #fff;
+					text-align: center;
+					.lo {
+						display: none;
+					}
+					&.projects {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	.ballon {
+		width: 40px;
+		height: 40px;
+		border-radius: 6px;
+		background-color: #f2f4f7;
+		position: absolute;
+		right: 15px;
+		top: 15px;
+		box-sizing: border-box;
+		padding: 10px 8px;
+		display: flex;
+		justify-content: space-between;
+		flex-flow: column nowrap;
+		opacity: 0;
+		@media only screen and (max-width: 768px) {
+			opacity: .8;
+		}
+		span {
+			display: inline-block;
+			width: 100%;
+			height: 2px;
+			background-color: rgba(0,0,0,.5);
+			transition: all .3s linear;
+			transform-origin: 0 1px;
+		}
+		&.active {
+			.one {
+				transform: translateY(-2px) rotate(45deg);
+				width: 33px;
+			}
+			.two {
+				opacity: 0;
+			}
+			.three {
+				transform: translateY(2px) rotate(-45deg);
+				width: 33px;
+			}
+		}
 	}
 }
 .footer {
@@ -58,14 +133,28 @@ a,a:hover,a:link,a:active,a:visited,a:focus {
 	margin-top: 70px;
 	margin-bottom: 30px;
 	.f {
-			display: inline-block;
-			font-size: 17px;
-			color: #000;
-			li {
-					float: left;
-					margin-right: 115px;
-			}
+		display: inline-block;
+		font-size: 17px;
+		color: #000;
+		li {
+			float: left;
+			margin-right: 115px;
+		}
 	}
+	@media only screen and (max-width: 1200px) {
+		margin-top: 35px;
+		margin-bottom: 17px;
+		.f {
+			font-size: 12px;
+			li {
+				margin-right: 60px;
+			}
+		}
+	}
+	@media only screen and (max-width: 630px) {
+		display: none;
+	}
+
 }
 
 .header .logo {
@@ -74,10 +163,18 @@ a,a:hover,a:link,a:active,a:visited,a:focus {
 	right: 59px;
 	width: 233px;
 	height: 80px;
-	@media screen and (max-width: 1200px) {
-		& {
-			display: none;
-		}
+	transition: all .3s linear;
+	@media only screen and (max-width: 1200px) {
+		top: 16px;
+		right: 30px;
+		width: 117px;
+		height: 40px;
+	}
+	@media only screen and (max-width: 860px) {
+		transform: translateY(20px);
+	}
+	@media only screen and (max-width: 768px) {
+		display: none;
 	}
 }
 

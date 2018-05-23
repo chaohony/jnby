@@ -4,14 +4,27 @@
         .nav {
             li {
                 color: #000;
+                @media only screen and (max-width: 768px) {
+                    color: #fff;
+                    a {
+                        color: #fff;
+                    }
+                }
             }
         }
     }
     .article {
         margin-top: 12px;
         font-size: 17px;
+        @media only screen and (max-width: 768px) {
+            margin-top: -180px;
+        }
         .location {
             margin-left: 44px;
+            @media only screen and (max-width: 768px) {
+                margin-bottom: 30px;
+                font-size: 12px;
+            }
         }
         .section-1 {
             margin-top: 50px;

@@ -36,5 +36,17 @@
                 margin-right: 115px;
             }
         }
+        @media only screen and (max-width: 1200px) {
+            bottom: 17px;
+            .f {
+                font-size: 12px;
+                li {
+                    margin-right: 60px;
+                }
+            }
+        }
+        @media only screen and (max-width: 630px) {
+            display: none;
+        }
     }
 }
