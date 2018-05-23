@@ -1,4 +1,5 @@
 import "./scss/index.scss"
+window.onload = function() {
   let state = {}
   let timer
   let h = document.createElement('div')
@@ -12,14 +13,11 @@ import "./scss/index.scss"
 
   window.onresize = function() {
     clearTimeout(timer)
-    clearTimeout(state.vTimer)
-    clearTimeout(state.hTimer)
     timer = setTimeout(() => {
-      run()
-    }, 200)
+      prepareToRun()
+    }, 400)
   }
 
-  
   function toggleClass(e) {
     if(!e) return
     let nameS = e.className.split('')
@@ -63,7 +61,7 @@ import "./scss/index.scss"
     })
   }
 
-  function run() {
+  function prepareToRun() {
     clearTimeout(state.hTimer)
     clearTimeout(state.vTimer)
     let v0 = document.getElementsByClassName('view-window')[0]
@@ -71,10 +69,10 @@ import "./scss/index.scss"
     v0.style.transform = `translate3d(0,0,0)`
     v1.style.transform = `translate3d(0,0,0)`
     sliderImg(v0, 5000, 'h')
-    setTimeout(() => {
-      sliderImg(v1, 5000, 'v')
-    }, 3000)
+    sliderImg(v1, 5000, 'v')
   }
-  run()
+  
+  prepareToRun()
+}
   
 
