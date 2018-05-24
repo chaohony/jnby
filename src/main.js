@@ -6,7 +6,48 @@ window.onload = function() {
   let f = document.createElement('div')
   let header = document.querySelector('.header')
   let footer = document.querySelector('.footer')
-  h.innerHTML = `<nav class="nav"><ul class="ul"><li class="collection"><a href="./page2.html">COLLECTION</a></li><li class="campaign"><a href="./page3.html">CAMPAIGN</a></li><li class="lookbook"><a href="./page4.html">LOOKBOOK</a><div class="lo">AW 18</div><div class="lo">SS 18</div></li><li class="brand-story"><a href="./page5.html">BRAND STORY</a></li><li class="projects"><a href="./page6.html">PROJECTS</a><div class="lo"><a href="./page7.html">IS THAT YOU</a><div>寻人启事</div></div><div class="lo">PARENT - CHILD CLUB<div>亲子俱乐部</div></div><div class="lo"><a href="./page8.html">IT'S DIFFERENT BUT FUNNY</a><div>不一样才好玩</div></div></li><li class="contact"><a href="./page9.html">CONTACT</a></li><li class="stores"><a href="#">STORES</a></li></ul><div class="ballon"><span class="one"></span><span class="two"></span><span class="three"></span></div></nav>`
+  h.innerHTML = `<nav class="nav">
+                  <ul class="ul">
+                    <li class="collection">
+                      <a href="./page2.html">COLLECTION</a>
+                    </li>
+                    <li class="campaign">
+                      <a href="./page3.html">CAMPAIGN</a>
+                    </li>
+                    <li class="lookbook">
+                      <a href="./page4.html">LOOKBOOK</a>
+                      <div class="lo">AW 18</div>
+                      <div class="lo">SS 18</div>
+                    </li>
+                    <li class="brand-story">
+                      <a href="./page5.html">BRAND STORY</a>
+                    </li>
+                    <li class="projects sp">
+                      <a href="./page6.html">PROJECTS</a>
+                      <div class="lo sp">
+                        <a href="./page7.html">IS THAT YOU</a>
+                        <div class="spHidden">寻人启事</div>
+                      </div>
+                      <div class="lo">
+                        PARENT - CHILD CLUB<div>亲子俱乐部</div>
+                      </div>
+                      <div class="lo sp">
+                        <a class="sp" href="./page8.html">IT'S DIFFERENT BUT FUNNY</a>
+                        <div>不一样才好玩</div>
+                      </div>
+                    </li>
+                    <li class="contact">
+                      <a href="./page9.html">CONTACT</a>
+                    </li>
+                    <li class="stores">
+                      <a href="#">STORES</a>
+                    </li></ul>
+                    <div class="ballon">
+                      <span class="one"></span>
+                      <span class="two"></span>
+                      <span class="three"></span>
+                      </div>
+                  </nav>`
   f.innerHTML = `<ul class="f"><li>@ 2018 Pomme de terre</li><li>INSTAGRAM</li><li>WEIBO</li><li>WECHAT</li></ul>`
   header.appendChild(h)
   footer.appendChild(f)

@@ -24,12 +24,23 @@
             font-size: 17px;
             line-height: 27px;
             margin: 12px 0 100px 0;
+            @media only screen and (max-width: 768px) {
+                margin-bottom: 30px;
+                font-size: 12px;
+            }
         }
         .container {
+            @media only screen and (max-width: 768px) {
+                margin-top: -80px;
+            }
             img {
                 margin-left:  142px;
                 width: 35%;
                 vertical-align: top;
+                @media only screen and (max-width: 768px) {
+                    width: 100%;
+                    margin: 0;
+                }
             }
             ul {
                 display: inline-block;
@@ -51,6 +62,21 @@
                     span {
                         font-size: 17px;
                         vertical-align: middle;
+                    }
+                }
+                @media only screen and (max-width: 768px) {
+                    margin-left: 0;
+                    li {
+                        margin-bottom: 30px;
+                        width: 45%;
+                        display: inline-block;
+                        img {
+                            width: 12px;
+                            margin-right: 10px;
+                        }
+                        span {
+                            font-size: 12px;
+                        }
                     }
                 }
             }

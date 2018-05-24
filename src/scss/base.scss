@@ -78,8 +78,27 @@ a,a:hover,a:link,a:active,a:visited,a:focus {
 					background-color: rgba(0,0,0,.5);
 					color: #fff;
 					text-align: center;
+					&.sp {
+						height: 90px;
+					}
 					.lo {
 						display: none;
+						&.sp {
+							display: block;
+							width: 100%;
+							height: 30px;
+							color: #fff;
+							.spHidden {
+								display: none;
+							}
+							a {
+								display: block;
+								width: 100%;
+								height: 30px;
+								color: #fff;
+								font-size: 17px;
+							}
+						}
 					}
 					&.projects {
 						width: 100%;

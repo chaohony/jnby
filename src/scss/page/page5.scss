@@ -24,11 +24,21 @@
         .location {
             margin: 12px 0 102px 0;
             font-size: 17px;
+            @media only screen and (max-width: 768px) {
+                margin-bottom: 30px;
+                font-size: 12px;
+            }
         }
         .container {
             display: flex;
+            @media only screen and (max-width: 768px) {
+                display: block;
+            }
             .img {
                 width: 40%;
+                @media only screen and (max-width: 768px) {
+                    width: 100%;
+                }
                 img {
                     width: 100%;
                 }
@@ -40,6 +50,12 @@
                 flex-flow: column nowrap;
                 justify-content: space-between;
                 font-size: 16px;
+                @media only screen and (max-width: 768px) {
+                    padding: 0;
+                    display: block;
+                    margin-top: 20px;
+                    font-size: 12px;
+                }
                 .ch {
                     margin-bottom: 15px;
                 }

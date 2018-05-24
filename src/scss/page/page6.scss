@@ -1,4 +1,4 @@
-#page6 {
+    #page6 {
     color: #000;
 
     .header {
@@ -25,19 +25,34 @@
             margin: 12px 0 100px 0;
             font-size: 17px;
             line-height: 17px;
+            @media only screen and (max-width: 768px) {
+                margin-bottom: 30px;
+                font-size: 12px;
+            }
         }
         .intro {
             margin-bottom: 113px;
+            @media only screen and (max-width: 768px) {
+                margin-bottom: 20px;
+            }
             img {
                 width: 224px;
                 height: 146px;
                 vertical-align: top;
+                @media only screen and (max-width: 768px) {
+                    width: 112px;
+                    height: 73px;
+                    display: block;
+                    margin: 0 auto;
+                    margin-bottom: 20px;
+                }
             }
             .intro {
                 padding-left: 60px;
                 display: inline-block;
                 width: 820px;
                 vertical-align: top;
+                
                 .ch {
                     font-size: 20px;
                     margin-bottom: 28px;
@@ -46,6 +61,19 @@
                 .en {
                     font-size: 14px;
                     line-height: 18px;
+                }
+                @media only screen and (max-width: 768px) {
+                    padding: 0;
+                    width: 100%;
+                    .ch {
+                        font-size: 12px;
+                        margin-bottom: 14px;
+                        line-height: 12px;
+                    }
+                    .en {
+                        font-size: 12px;
+                        line-height: 12px;
+                    }
                 }
             }
         }
@@ -81,6 +109,9 @@
                     z-index: 1;
                     text-align: center;
                     transform: translate3d(-50%,-50%,0);
+                    @media only screen and (max-width: 768px) {
+                        font-size: 12px;
+                    }
                 }
                 p {
                     position: absolute;
@@ -90,6 +121,13 @@
                     text-align: center;
                     bottom: 20px;
                     font-size: 35px;
+                    @media only screen and (max-width: 768px) {
+                        font-size: 12px;
+                    }
+                    @media only screen and (max-width: 420px) {
+                        display: none;
+                    }
+                    
                 }
                 img {
                     width: 100%;
