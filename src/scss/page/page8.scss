@@ -95,6 +95,9 @@
                         z-index: 1;
                         font-size: 90px;
                         white-space: nowrap;
+                        @media only screen and (max-width: 1400px) {
+                            font-size: 24px;
+                        }
                         @media only screen and (max-width: 768px) {
                             font-size: 12px;
                         }
