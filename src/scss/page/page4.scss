@@ -18,11 +18,12 @@
     .article {
         padding: 0 44px;
         font-size: 0;
+        margin-top: 40px;
         @media only screen and (max-width: 768px) {
             margin-top: -240px;
         }
         .location {
-            margin: 12px 0 102px 0;
+            margin: 12px 0 40px 0;
             font-size: 17px;
             @media only screen and (max-width: 768px) {
                 margin-bottom: 30px;

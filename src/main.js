@@ -21,7 +21,7 @@ window.onload = function() {
                       </a>
                     </li>
                     <li class="lookbook">
-                      <a class="li-a" href="./page4.html">
+                      <a class="li-a sp" href="./page4.html">
                         <span class="en">LOOKBOOK</span>
                         <span class="ch">产品图册</span>
                         <br>
@@ -38,7 +38,7 @@ window.onload = function() {
                       </a>
                     </li>
                     <li class="projects">
-                      <a class="li-a" href="./page6.html">
+                      <a class="li-a sp" href="./page6.html">
                         <span class="en">PROJECTS</span>
                         <span class="ch">专题</span>
                         <br>
@@ -119,7 +119,7 @@ window.onload = function() {
     let timer = setInterval(() => {
       if(!d) return
       d.className = toggleClass(d)
-    }, 3000)
+    }, 5000)
   })(document.getElementById('page1'))
 
   function sliderImg(c, duration, f) {
@@ -143,7 +143,7 @@ window.onload = function() {
       i++
       if(i === 2) {
         c.style.transition = `none`
-        c.style.transform = `translate3d(0,0,0)`
+        c.style.transform = `translate3d(0px,0px,0px)`
         i = 0
       }
     })
