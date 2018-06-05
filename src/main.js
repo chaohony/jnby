@@ -9,38 +9,60 @@ window.onload = function() {
   h.innerHTML = `<nav class="nav">
                   <ul class="ul">
                     <li class="collection">
-                      <a href="./page2.html">COLLECTION</a>
+                      <a class="li-a" href="./page2.html">
+                        <span class="en">COLLECTION</span>
+                        <span class="ch">搭配</span>  
+                      </a>
                     </li>
                     <li class="campaign">
-                      <a href="./page3.html">CAMPAIGN</a>
+                      <a class="li-a" href="./page3.html">
+                        <span class="en">CAMPAIGN</span>
+                        <span class="ch">形象片</span>
+                      </a>
                     </li>
                     <li class="lookbook">
-                      <a href="./page4.html">LOOKBOOK</a>
-                      <div class="lo">AW 18</div>
-                      <div class="lo">SS 18</div>
+                      <a class="li-a" href="./page4.html">
+                        <span class="en">LOOKBOOK</span>
+                        <span class="ch">产品图册</span>
+                        <br>
+                        <div class="lo-wrapper">
+                          <div class="lo">AW 18</div>
+                          <div class="lo">SS 18</div>
+                        </div> 
+                      </a>
                     </li>
                     <li class="brand-story">
-                      <a href="./page5.html">BRAND STORY</a>
+                      <a class="li-a" href="./page5.html">
+                        <span class="en">BRAND STORY</span>
+                        <span class="ch">品牌故事</span>
+                      </a>
                     </li>
-                    <li class="projects sp">
-                      <a href="./page6.html">PROJECTS</a>
-                      <div class="lo sp">
-                        <a href="./page7.html">IS THAT YOU</a>
-                        <div class="spHidden">寻人启事</div>
-                      </div>
-                      <div class="lo">
-                        PARENT - CHILD CLUB<div>亲子俱乐部</div>
-                      </div>
-                      <div class="lo sp">
-                        <a class="sp" href="./page8.html">IT'S DIFFERENT BUT FUNNY</a>
-                        <div>不一样才好玩</div>
-                      </div>
+                    <li class="projects">
+                      <a class="li-a" href="./page6.html">
+                        <span class="en">PROJECTS</span>
+                        <span class="ch">专题</span>
+                        <br>
+                        <div class="lo-wrapper">
+                          <span class="lo" href="./page7.html">IS THAT YOU</span>
+                          <div class="los">寻人启事</div>
+                          <div class="los">PARENT - CHILD CLUB</div>
+                          <div class="los">亲子俱乐部</div>
+                          <span class="los" href="./page8.html">IT'S DIFFERENT BUT FUNNY</span>
+                          <div class="los">不一样才好玩</div>
+                        </div>
+                      </a>
                     </li>
                     <li class="contact">
-                      <a href="./page9.html">CONTACT</a>
+                      <a class="li-a" href="./page9.html">
+                        <span class="en">CONTACT</span>
+                        <span class="ch">联系我们</span>
+                      </a>
                     </li>
                     <li class="stores">
-                      <a href="#">STORES</a>
+                      <a class="li-a" href="#">
+                        <span class="en">STORES</span>
+                        <span class="ch">店铺</span>
+                      </a>
                     </li></ul>
                     <div class="ballon">
                       <span class="one"></span>
@@ -48,7 +70,12 @@ window.onload = function() {
                       <span class="three"></span>
                       </div>
                   </nav>`
-  f.innerHTML = `<ul class="f"><li>@ 2018 Pomme de terre</li><li>INSTAGRAM</li><li>WEIBO</li><li>WECHAT</li></ul>`
+  f.innerHTML = `<ul class="f">
+                    <li>@ 2018 Pomme de terre</li>
+                    <li>INSTAGRAM</li>
+                    <li>WEIBO</li>
+                    <li>WECHAT</li>
+                 </ul>`
   header.appendChild(h)
   footer.appendChild(f)
 
