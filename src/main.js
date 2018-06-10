@@ -43,12 +43,18 @@ window.onload = function() {
                         <span class="ch">专题</span>
                         <br>
                         <div class="lo-wrapper">
-                          <span class="lo" href="./page7.html">IS THAT YOU</span>
-                          <div class="los">寻人启事</div>
-                          <div class="los">PARENT - CHILD CLUB</div>
-                          <div class="los">亲子俱乐部</div>
-                          <span class="los" href="./page8.html">IT'S DIFFERENT BUT FUNNY</span>
-                          <div class="los">不一样才好玩</div>
+                          <div class="lo" href="./page7.html">
+                            <span class="inner-en">IS THAT YOU</span>
+                            <div class="los inner-ch">寻人启事</div>
+                          </div>
+                          <div class="lo">
+                            <span class="inner-en">PARENT - CHILD CLUB</span>
+                            <div class="los inner-ch">亲子俱乐部</div>
+                          </div>
+                          <div class="lo jumpToPage8" href="./page8.html">
+                            <span class="inner-en">IT'S DIFFERENT BUT FUNNY</span>
+                            <div class="los inner-ch">不一样才好玩</div>
+                          </div>
                         </div>
                       </a>
                     </li>
@@ -162,5 +168,11 @@ window.onload = function() {
   }
   
   prepareToRun()
+
+  document.getElementsByClassName('jumpToPage8')[0].onclick=function(e) {
+    e.stopPropagation()
+    e.preventDefault()
+    window.open('./page8.html','_self')
+  }
 }
   

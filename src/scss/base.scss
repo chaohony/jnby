@@ -1,5 +1,53 @@
+html {
+	font-size: 100px;
+	@media only screen and (max-width: 1280px) {
+		font-size: 40px;
+	} 
+	@media only screen and (max-width: 1000px) {
+		font-size: 30px;
+	} 
+}
 body {
 	font-family: theFont,PingFang SC,PingFangSC-Semibold,Helvetica Neue,Helvetica,Nimbus Sans L,Arial,Liberation Sans,Hiragino Sans GB,Source Han Sans CN,Source Han Sans SC,Microsoft YaHei,SimHei,sans-serif;
+}
+.lookbook, .projects {
+	&:hover {
+		.en {
+			display: none;
+		}
+		.ch {
+			width: 120px;
+			display: inline-block;
+		}
+		.lo-wrapper {
+			display: inline-block;
+			position: absolute;
+			top: 10px;
+			left: 0;
+			z-index: 20;
+			.lo {
+				display: block;
+				line-height: 1.3;
+			}
+			.lo:hover, .los:hover {
+				font-weight: bold;
+			}
+			.inner-en {
+				display: inline-block;
+			}
+			.inner-ch {
+				display: none;
+			}
+			.lo:hover {
+				.inner-en {
+					display: none;
+				}
+				.inner-ch {
+					display: inline-block;
+				}
+			}
+		}
+	}
 }
 .li-a {
 	white-space: nowrap;
@@ -18,38 +66,7 @@ body {
 		width: 100%;
 		display: none;
 	}
-	&:hover {
-		.en {
-			display: none;
-		}
-		.ch {
-			width: 120px;
-			display: inline-block;
-		}
-		.lo-wrapper {
-			display: inline-block;
-			position: absolute;
-			top: 20px;
-			left: 0;
-			z-index: 20;
-			.lo {
-				display: block;
-				line-height: 1.3;
-			}
-			.los {
-				display: block;
-				font-size: 12px;
-				line-height: 1.3;
-				margin-bottom: 3px;
-			}
-			.lo:hover, .los:hover {
-				font-weight: bold;
-			}
-			@media only screen and (max-width: 768px) {
-				display: none;
-			}
-		}
-	}
+	
 	.lo-wrapper {
 		display: none;
 		text-align: left;
@@ -59,6 +76,7 @@ body {
 	position: relative;
 	.nav {
 		padding: 32px 0 0 44px;
+		overflow: hidden;
 		color: #fff;
 		@media only screen and (max-width: 1200px) {
 			padding: 32px 0 0 44px;
@@ -93,6 +111,30 @@ body {
 						&:first-of-type {
 							margin-top: 8px;
 							font-size: 14px;
+						}
+					}
+				}
+				@media only screen and (max-width: 768px) {
+					&.lookbook:hover {
+						.lo-wrapper {
+							top: -5px;
+							left: 110px;
+							.lo {
+								.inner-en, .inner-ch {
+									font-size: 12px !important;
+								}
+							}
+						}
+					}
+					&.projects:hover {
+						.lo-wrapper {
+							top: -15px;
+							left: 110px;
+							.lo {
+								.inner-en, .inner-ch {
+									font-size: 12px !important;
+								}
+							}
 						}
 					}
 				}
