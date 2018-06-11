@@ -49,6 +49,9 @@
                     margin: 0 auto;
                     margin-bottom: 20px;
                 }
+                @media only screen and (max-width: 400px) {
+                    margin-left: 100px;
+                }
             }
             .intro {
                 padding-left: 60px;
@@ -146,5 +149,40 @@
     a,a:hover,a:link,a:active,a:visited,a:focus {
         text-decoration: none;
         color: #000;
+    }
+    .fixToWidth768 {
+        display: none;
+    }
+    @media only screen and(max-width: 768px) {
+        .fixToWidth768 {
+            display: block;
+            position: fixed;
+            top: 100px;
+            left: 0px;
+            z-index: 20;
+            font-size: 0;
+            .ff {
+                font-size: 12px;
+                transform: scale(.5);
+                cursor: pointer;
+                height: 20px;
+                width: 200px;
+                white-space: nowrap;
+                .ff-en {
+                    display: block;
+                }
+                .ff-ch {
+                    display: none;
+                }
+                &:hover {
+                    .ff-en {
+                        display: none;
+                    }
+                    .ff-ch {
+                        display: block;
+                    }
+                }
+            }
+        }
     }
 }
