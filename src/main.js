@@ -1,7 +1,7 @@
 import "./scss/index.scss"
 window.onload = function() {
   let state = {}
-  let timer
+  let timer = null
   let h = document.createElement('div')
   let f = document.createElement('div')
   let header = document.querySelector('.header')
@@ -82,6 +82,7 @@ window.onload = function() {
   window.onresize = function() {
     clearTimeout(timer)
     timer = setTimeout(() => {
+      console.log("我被执行了")
       prepareToRun()
     }, 400)
   }
@@ -104,7 +105,6 @@ window.onload = function() {
     d.className = className
     c.className = className_1
   }
-  
   
   function toggleClass(e) {
     if(!e) return
@@ -158,7 +158,7 @@ window.onload = function() {
     v0.style.transform = `translate3d(0,0,0)`
     v1.style.transform = `translate3d(0,0,0)`
     sliderImg(v0, 5000, 'h')
-    sliderImg(v1, 5000, 'v')
+    sliderImg(v1, 5000, 'h')
   }
   
   prepareToRun()
