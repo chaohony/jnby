@@ -66,7 +66,7 @@ window.onload = function () {
                       </a>
                     </li>
                     <li class="stores">
-                      <a class="li-a" href="#">
+                      <a class="li-a" href="./page1.html">
                         <span class="en">STORES</span>
                         <span class="ch">店铺</span>
                       </a>

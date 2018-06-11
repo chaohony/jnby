@@ -2,6 +2,7 @@
     color: #000;
     .header {
         .nav {
+            overflow: hidden;
             li {
                 color: #000;
                 @media only screen and (max-width: 768px) {
@@ -21,10 +22,10 @@
             margin-top: 40px;
         }
         .location {
-            margin-left: 44px;
             width: 100%;
             text-align: left;
             display: block;
+            text-indent: 44px;
             @media only screen and (max-width: 768px) {
                 margin-bottom: 30px;
                 font-size: 12px;
@@ -86,5 +87,8 @@
     a,a:hover,a:link,a:active,a:visited,a:focus {
         text-decoration: none;
         color: #000;
+    }
+    .ballon {
+        right: 30px;
     }
 }

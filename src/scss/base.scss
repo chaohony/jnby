@@ -73,14 +73,12 @@ body {
 				}
 				@media only screen and (max-width: 768px) {
 					&.lookbook:hover {
-						height: 80px;
 						.lo-wrapper {
 							top: 20px;
 							left: 40px;
 						}
 					}
 					&.projects:hover {
-						height: 120px;
 						.lo-wrapper {
 							top: 20px;
 							left: -50px;
@@ -141,6 +139,14 @@ body {
 					text-align: center;
 					&.sp {
 						height: 90px;
+					}
+					.lo-wrapper {
+						display: none;
+					}
+					&:hover {
+						.lo-wrapper {
+							display: none !important;
+						}
 					}
 					.lo {
 						display: none;
