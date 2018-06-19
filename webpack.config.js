@@ -62,6 +62,19 @@ const _module = {
                     }
                 ]
             })
+        },
+        {
+            test: /\.(otf)|(woff)|(eot)|(ttf)$/,
+            use: [
+                {
+                    loader: "url-loader",
+                    options: {
+                        limit: 50000,
+                        name: "[hash:8].[name].[ext]",
+                        outputPath: 'images'
+                    }
+                }
+            ]
         }
     ]
 }

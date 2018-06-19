@@ -1,8 +1,12 @@
 @font-face {
-    font-family: myFont;
-    src: './font/LG.ttf';
+    font-family: AkzidenzGrotesk-BoldExtended;
+    src: url('./font/AkzidenzGrotesk-BoldExtended.otf');
 }
 @font-face {
-    font-family: theFont;
-    src: './font/AGME.otf'
+    font-family: AkzidenzGrotesk-MediumExtended;
+    src: url('./font/AkzidenzGrotesk-MediumExtended.otf');
+}
+@font-face {
+    font-family: HYQiHeiY1-75W;
+    src: url('./font/HYQiHeiY1-75W Bold.otf');
 }
