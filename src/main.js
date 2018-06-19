@@ -1,6 +1,6 @@
 import "./scss/index.scss"
 import page2 from './js/page2'
-
+import href from './js/href'
 window.onload = function () {
     let state = {
         timer1: null,
@@ -32,8 +32,9 @@ window.onload = function () {
                         <span class="ch">产品图册</span>
                         <br>
                         <div class="lo-wrapper">
-                          <div class="lo">AW 18</div>
+                          <div class="lo">AW 17</div>
                           <div class="lo">SS 18</div>
+                          <div class="lo">AW 18</div>
                         </div> 
                       </a>
                     </li>
@@ -49,7 +50,7 @@ window.onload = function () {
                         <span class="ch">专题</span>
                         <br>
                         <div class="lo-wrapper">
-                          <div class="lo jumpToPage7">
+                          <div class="lo jumpToPage6">
                             <span class="inner-en">IS THAT YOU</span>
                             <div class="los inner-ch">寻人启事</div>
                           </div>
@@ -132,18 +133,7 @@ window.onload = function () {
 
     // page2页的图片效果
     page2()
+    href()
 
-
-    // 链接跳转
-    document.getElementsByClassName('jumpToPage8')[0].onclick = function (e) {
-        e.stopPropagation()
-        e.preventDefault()
-        window.open('./page8.html', '_self')
-    }
-    document.getElementsByClassName('jumpToPage7')[0].onclick = function (e) {
-        e.stopPropagation()
-        e.preventDefault()
-        window.open('./page7.html', '_self')
-    }
 }
   

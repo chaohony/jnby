@@ -7,7 +7,7 @@ export default function page2() {
         toggleClass(document.querySelector('#page2 .img-group-left'), 'img1', 'img2')
         toggleClass(document.querySelector('#page2 .img-group-right'), 'img3', 'img4')
     }, 7000)
-    if(document.querySelector('#page2 .btn-left')) {
+    if(document.querySelector('#page2 .btn-left') && document.querySelector('#page2 .btn-right')) {
         document.querySelector('#page2 .btn-left').onclick = prev
         document.querySelector('#page2 .btn-right').onclick = next
     }
