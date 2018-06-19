@@ -1,8 +1,13 @@
 import "./scss/index.scss"
+import page2 from './js/page2'
 
 window.onload = function () {
-    let state = {}
-    let timer = null
+    let state = {
+        timer1: null,
+        timer2: null
+    }
+
+    // 插入头尾
     let h = document.createElement('div')
     let f = document.createElement('div')
     let header = document.querySelector('.header')
@@ -12,7 +17,7 @@ window.onload = function () {
                     <li class="collection">
                       <a class="li-a" href="./page2.html">
                         <span class="en">COLLECTION</span>
-                        <span class="ch">搭配</span>  
+                        <span class="ch">搭配</span>
                       </a>
                     </li>
                     <li class="campaign">
@@ -66,7 +71,7 @@ window.onload = function () {
                       </a>
                     </li>
                     <li class="stores">
-                      <a class="li-a" href="./index.html">
+                      <a class="li-a" href="http://www.jnbygroup.com/address.do?p=3">
                         <span class="en">STORES</span>
                         <span class="ch">店铺</span>
                       </a>
@@ -79,20 +84,14 @@ window.onload = function () {
                   </nav>`
     f.innerHTML = `<ul class="f">
                     <li>@ 2018 Pomme de terre</li>
-                    <li>INSTAGRAM</li>
-                    <li>WEIBO</li>
-                    <li>WECHAT</li>
+                    <li><a href="https://www.instagram.com/pommedeterre__/" target="_self"></a>INSTAGRAM</li>
+                    <li><a href="https://weibo.com/pommedeterre2016?refer_flag=1005055014_" target="_self">WEIBO</a></li>
+                    <li><a href="https://mp.weixin.qq.com/s/tlS237QVGdbeDb-taD86Hg" target="_self">WECHAT</a></li>
                  </ul>`
     header.appendChild(h)
     footer.appendChild(f)
 
-    window.onresize = function () {
-        clearTimeout(timer)
-        timer = setTimeout(() => {
-            prepareToRun()
-        }, 400)
-    }
-
+    // collapse效果
     let d = document.querySelector('.ballon')
     let c = document.querySelector('.ul')
     d.addEventListener('click', toggleNav)
@@ -112,6 +111,7 @@ window.onload = function () {
         c.className = className_1
     }
 
+    // 工具函数
     function toggleClass(e) {
         if (!e) return
         let nameS = e.className.split('')
@@ -121,54 +121,20 @@ window.onload = function () {
         return nameS.join('')
     }
 
+    // page1页的背景图改变效果
     ((d) => {
         let timer = setInterval(() => {
             if (!d) return
             d.className = toggleClass(d)
-        }, 5000)
+        }, 7000)
     })(document.getElementById('page1'))
 
-    function sliderImg(c, duration, f) {
-        if (!c || !c.style) return
-        let i = 0
-        let imgs = c.getElementsByTagName('img')
-        let width = imgs[0].clientWidth
-        let height = imgs[0].clientHeight
-        if (f === 'h') {
-            state.hTimer = setInterval(() => {
-                c.style.transition = `transform .5s ease-in-out`
-                c.style.transform = `translate3d(${-width * (i + 1)}px, 0, 0)`
-            }, duration)
-        } else {
-            state.vTimer = setInterval(() => {
-                c.style.transition = `transform .5s ease-in-out`
-                c.style.transform = `translate3d(0, ${-height * (i + 1)}px, 0)`
-            }, duration)
-        }
-        c.addEventListener('transitionend', () => {
-            i++
-            if (i === 2) {
-                c.style.transition = `none`
-                c.style.transform = `translate3d(0px,0px,0px)`
-                i = 0
-            }
-        })
-    }
 
-    function prepareToRun() {
-        clearTimeout(state.hTimer)
-        clearTimeout(state.vTimer)
-        let v0 = document.getElementsByClassName('view-window')[0]
-        let v1 = document.getElementsByClassName('view-window')[1]
-        if (!v0 || !v0.style) return
-        v0.style.transform = `translate3d(0,0,0)`
-        v1.style.transform = `translate3d(0,0,0)`
-        sliderImg(v0, 5000, 'h')
-        sliderImg(v1, 5000, 'h')
-    }
+    // page2页的图片效果
+    page2()
 
-    prepareToRun()
 
+    // 链接跳转
     document.getElementsByClassName('jumpToPage8')[0].onclick = function (e) {
         e.stopPropagation()
         e.preventDefault()

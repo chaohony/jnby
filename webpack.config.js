@@ -69,7 +69,7 @@ const _module = {
                 {
                     loader: "url-loader",
                     options: {
-                        limit: 50000,
+                        limit: 100000,
                         name: "[hash:8].[name].[ext]",
                         outputPath: 'images'
                     }

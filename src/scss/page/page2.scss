@@ -1,94 +1,160 @@
 #page2 {
-    color: #000;
-    .header {
-        .nav {
-            overflow: hidden;
-            li {
-                color: #000;
-                @media only screen and (max-width: 768px) {
-                    color: #fff;
-                    a {
-                        color: #fff;
-                    }
-                }
-            }
-        }
-    }
-    .article {
-        font-size: 17px;
-        display: block;
-        margin-top: 100px;
-        @media only screen and (max-width: 768px) {
-            margin-top: 40px;
-        }
-        .location {
-            width: 100%;
-            text-align: left;
-            display: block;
-            text-indent: 44px;
-            @media only screen and (max-width: 768px) {
-                margin-bottom: 30px;
-                font-size: 12px;
-            }
-        }
-        .section-1 {
-            margin-top: 30px;
-            text-align: center;
-            font-size: 0;
-            display: flex;
-            padding: 0 44px;
-            justify-content: space-between;
-            .img-group-left {
-                display: inline-block;
-                width: 47%;
-                overflow: hidden;
-                .view-window {
-                    transition: transform .5s linear;
-                    white-space: nowrap;
-                }
-                img {
-                    width: 100%;
-                }
-            }
-            .img-group-right {
-                display: inline-block;
-                margin-right: 0;
-                width: 47%;
-                .v {
-                    transition: transform .5s linear;
-                    padding-top: 150%;
-                    position: relative;
-                    overflow: hidden;
-                    .view-window {
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        left: 0;
-                        bottom: 0;
-                        // 竖向滚动不加
-                        white-space: nowrap;
-                        img {
-                            width: 100%;
-                        }
-                    }
-                }
-            }
-        }
-        .section-2 {
-            margin-top: 70px;
-            padding: 0 44px;
-            font-size: 0;
-            img {
-                width: 100%;
-            }
-        }
-    }
-
-    a,a:hover,a:link,a:active,a:visited,a:focus {
-        text-decoration: none;
+  color: #000;
+  .header {
+    .nav {
+      overflow: hidden;
+      li {
         color: #000;
+        @media only screen and (max-width: 768px) {
+          color: #fff;
+          a {
+            color: #fff;
+          }
+        }
+      }
     }
-    .ballon {
-        right: 30px;
+  }
+  .article {
+    font-size: 17px;
+    display: block;
+    margin-top: 100px;
+    @media only screen and (max-width: 768px) {
+      margin-top: 40px;
     }
+    .location {
+      width: 100%;
+      text-align: left;
+      display: block;
+      text-indent: 44px;
+      font-family: AkzidenzGrotesk-MediumExtended;
+      @media only screen and (max-width: 768px) {
+        margin-bottom: 30px;
+        font-size: 12px;
+      }
+    }
+    .section-1 {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 0;
+      display: flex;
+      padding: 0 400px;
+      position: relative;
+      justify-content: space-between;
+      .img-group-left {
+        display: inline-block;
+        width: 47%;
+        overflow: hidden;
+        background-size: 100% 100%;
+        transition: background 1s linear;
+        &.img1 {
+          background-image: url("../image/page2/m1.png");
+        }
+        &.img2 {
+          background-image: url("../image/page2/m2.png");
+        }
+      }
+      .img-group-right {
+        display: inline-block;
+        margin-right: 0;
+        width: 47%;
+        overflow: hidden;
+        transition: background 1s linear;
+        &.img3 {
+          background-image: url("../image/page2/m3.png");
+        }
+        &.img4 {
+          background-image: url("../image/page2/m4.png");
+        }
+        background-size: 100% 100%;
+        .view-window {
+          padding-top: 150%;
+        }
+      }
+      .btn-controller {
+        position: absolute;
+        left: 40px;
+        right: 40px;
+        top: 140px;
+        font-size: 16px;
+        .btn-left {
+          display: inline-block;
+          float: left;
+          img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+          }
+        }
+        .btn-right {
+          display: inline-block;
+          float: right;
+          img {
+            transform: rotate(180deg);
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+          }
+        }
+        @media only screen and (max-width: 1280px) {
+          top: 120px;
+          .btn-left {
+            img {
+              width: 30px;
+              height: 30px;
+            }
+          }
+          .btn-right {
+            img {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+        @media only screen and (max-width: 768px) {
+          top: 70px;
+          .btn-left {
+            img {
+              width: 30px;
+              height: 30px;
+            }
+          }
+          .btn-right {
+            img {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+
+      }
+      @media only screen and (max-width: 1280px) {
+        padding: 0 200px;
+      }
+      @media only screen and (max-width: 768px) {
+        padding: 0 100px;
+      }
+    }
+    .section-2 {
+      margin-top: 70px;
+      padding: 0 400px;
+      font-size: 0;
+      img {
+        width: 100%;
+      }
+      @media only screen and (max-width: 1280px) {
+        padding: 0 200px;
+      }
+      @media only screen and (max-width: 768px) {
+        padding: 0 100px;
+      }
+    }
+  }
+
+  a, a:hover, a:link, a:active, a:visited, a:focus {
+    text-decoration: none;
+    color: #000;
+  }
+  .ballon {
+    right: 30px;
+  }
 }

@@ -1,75 +1,76 @@
 #page5 {
-    color: #000;
+  color: #000;
 
-    .header {
-        .nav {
-            li {
-                color: #000;
-                @media only screen and (max-width: 768px) {
-                    color: #fff;
-                    a {
-                        color: #fff;
-                    }
-                }
-            }
-        }
-    }
-
-    .article {
-        padding: 0 44px;
-        font-size: 0;
-        margin-top: 100px;
-        @media only screen and (max-width: 768px) {
-            margin-top: 40px;
-        }
-        .location {
-            margin: 12px 0 40px 0;
-            font-size: 17px;
-            @media only screen and (max-width: 768px) {
-                margin-bottom: 30px;
-                font-size: 12px;
-            }
-        }
-        .container {
-            display: flex;
-            @media only screen and (max-width: 768px) {
-                display: block;
-            }
-            .img {
-                width: 40%;
-                @media only screen and (max-width: 768px) {
-                    width: 100%;
-                }
-                img {
-                    width: 100%;
-                }
-            }
-            .text-introduction {
-                display: flex;
-                flex: 1;
-                padding-left: 127px;
-                flex-flow: column nowrap;
-                justify-content: space-between;
-                font-size: 16px;
-                @media only screen and (max-width: 1200px) {
-                    font-size: 12px;
-                }
-                @media only screen and (max-width: 768px) {
-                    padding: 0;
-                    display: block;
-                    margin-top: 20px;
-                    font-size: 12px;
-                }
-                .ch {
-                    margin-bottom: 15px;
-                }
-            }
-        }
-          
-    }
-        
-    a,a:hover,a:link,a:active,a:visited,a:focus {
-        text-decoration: none;
+  .header {
+    .nav {
+      li {
         color: #000;
+        @media only screen and (max-width: 768px) {
+          color: #fff;
+          a {
+            color: #fff;
+          }
+        }
+      }
     }
+  }
+
+  .article {
+    padding: 0 44px;
+    font-size: 0;
+    margin-top: 100px;
+    @media only screen and (max-width: 768px) {
+      margin-top: 40px;
+    }
+    .location {
+      margin: 12px 0 40px 0;
+      font-size: 17px;
+      font-family: AkzidenzGrotesk-MediumExtended;
+      @media only screen and (max-width: 768px) {
+        margin-bottom: 30px;
+        font-size: 12px;
+      }
+    }
+    .container {
+      display: flex;
+      @media only screen and (max-width: 768px) {
+        display: block;
+      }
+      .img {
+        width: 40%;
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+        }
+        img {
+          width: 100%;
+        }
+      }
+      .text-introduction {
+        display: flex;
+        flex: 1;
+        padding-left: 127px;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        font-size: 16px;
+        @media only screen and (max-width: 1200px) {
+          font-size: 12px;
+        }
+        @media only screen and (max-width: 768px) {
+          padding: 0;
+          display: block;
+          margin-top: 20px;
+          font-size: 12px;
+        }
+        .ch {
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+  }
+
+  a, a:hover, a:link, a:active, a:visited, a:focus {
+    text-decoration: none;
+    color: #000;
+  }
 }
