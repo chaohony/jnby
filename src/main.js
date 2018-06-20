@@ -1,6 +1,7 @@
 import "./scss/index.scss"
 import page2 from './js/page2'
 import href from './js/href'
+import sowing from './js/sowing-map'
 window.onload = function () {
     let state = {
         timer1: null,
@@ -32,9 +33,9 @@ window.onload = function () {
                         <span class="ch">产品图册</span>
                         <br>
                         <div class="lo-wrapper">
-                          <div class="lo">AW 17</div>
-                          <div class="lo">SS 18</div>
-                          <div class="lo">AW 18</div>
+                          <div class="lo jumpToPage11">AW 17</div>
+                          <div class="lo jumpToPage11">SS 18</div>
+                          <div class="lo jumpToPage11">AW 18</div>
                         </div> 
                       </a>
                     </li>
@@ -45,7 +46,7 @@ window.onload = function () {
                       </a>
                     </li>
                     <li class="projects">
-                      <a class="li-a sp" href="./page6.html">
+                      <a class="li-a sp" href="./page12.html">
                         <span class="en">PROJECTS</span>
                         <span class="ch">专题</span>
                         <br>
@@ -54,7 +55,7 @@ window.onload = function () {
                             <span class="inner-en">IS THAT YOU</span>
                             <div class="los inner-ch">寻人启事</div>
                           </div>
-                          <div class="lo">
+                          <div class="lo jumpToPage10">
                             <span class="inner-en">PARENT - CHILD CLUB</span>
                             <div class="los inner-ch">亲子俱乐部</div>
                           </div>
@@ -134,6 +135,7 @@ window.onload = function () {
     // page2页的图片效果
     page2()
     href()
+    sowing()
 
 }
   

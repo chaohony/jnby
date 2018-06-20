@@ -3,7 +3,7 @@ const extractTextWebpackPlugin = require("extract-text-webpack-plugin")
 const path = require('path')
 
 // 自己项目要用到的模板名
-const pages = [{name: 'index'}, {name: 'page2'}, {name: 'page3'}, {name: 'page4'}, {name: 'page5'}, {name: 'page6'}, {name: 'page7'}, {name: 'page8'}, {name: 'page9'}]
+const pages = [{name: 'index'}, {name: 'page2'}, {name: 'page3'}, {name: 'page4'}, {name: 'page5'}, {name: 'page6'}, {name: 'page7'}, {name: 'page8'}, {name: 'page9'}, {name: 'page10'}, {name: 'page11'},{name: 'page12'}]
 
 // 配置webpack入口
 const entry = path.join(__dirname, "/src/main.js")

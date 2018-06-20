@@ -76,6 +76,10 @@ var _page = __webpack_require__(2);
 
 var _page2 = _interopRequireDefault(_page);
 
+var _href = __webpack_require__(3);
+
+var _href2 = _interopRequireDefault(_href);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 window.onload = function () {
@@ -88,7 +92,7 @@ window.onload = function () {
   var f = document.createElement('div');
   var header = document.querySelector('.header');
   var footer = document.querySelector('.footer');
-  h.innerHTML = '<nav class="nav">\n                  <ul class="ul">\n                    <li class="collection">\n                      <a class="li-a" href="./page2.html">\n                        <span class="en">COLLECTION</span>\n                        <span class="ch">\u642D\u914D</span>\n                      </a>\n                    </li>\n                    <li class="campaign">\n                      <a class="li-a" href="./page3.html">\n                        <span class="en">CAMPAIGN</span>\n                        <span class="ch">\u5F62\u8C61\u7247</span>\n                      </a>\n                    </li>\n                    <li class="lookbook">\n                      <a class="li-a sp" href="./page4.html">\n                        <span class="en">LOOKBOOK</span>\n                        <span class="ch">\u4EA7\u54C1\u56FE\u518C</span>\n                        <br>\n                        <div class="lo-wrapper">\n                          <div class="lo">AW 18</div>\n                          <div class="lo">SS 18</div>\n                        </div> \n                      </a>\n                    </li>\n                    <li class="brand-story">\n                      <a class="li-a" href="./page5.html">\n                        <span class="en">BRAND STORY</span>\n                        <span class="ch">\u54C1\u724C\u6545\u4E8B</span>\n                      </a>\n                    </li>\n                    <li class="projects">\n                      <a class="li-a sp" href="./page6.html">\n                        <span class="en">PROJECTS</span>\n                        <span class="ch">\u4E13\u9898</span>\n                        <br>\n                        <div class="lo-wrapper">\n                          <div class="lo jumpToPage7">\n                            <span class="inner-en">IS THAT YOU</span>\n                            <div class="los inner-ch">\u5BFB\u4EBA\u542F\u4E8B</div>\n                          </div>\n                          <div class="lo">\n                            <span class="inner-en">PARENT - CHILD CLUB</span>\n                            <div class="los inner-ch">\u4EB2\u5B50\u4FF1\u4E50\u90E8</div>\n                          </div>\n                          <div class="lo jumpToPage8">\n                            <span class="inner-en">IT\'S DIFFERENT BUT FUNNY</span>\n                            <div class="los inner-ch">\u4E0D\u4E00\u6837\u624D\u597D\u73A9</div>\n                          </div>\n                        </div>\n                      </a>\n                    </li>\n                    <li class="contact">\n                      <a class="li-a" href="./page9.html">\n                        <span class="en">CONTACT</span>\n                        <span class="ch">\u8054\u7CFB\u6211\u4EEC</span>\n                      </a>\n                    </li>\n                    <li class="stores">\n                      <a class="li-a" href="http://www.jnbygroup.com/address.do?p=3">\n                        <span class="en">STORES</span>\n                        <span class="ch">\u5E97\u94FA</span>\n                      </a>\n                    </li></ul>\n                    <div class="ballon">\n                      <span class="one"></span>\n                      <span class="two"></span>\n                      <span class="three"></span>\n                      </div>\n                  </nav>';
+  h.innerHTML = '<nav class="nav">\n                  <ul class="ul">\n                    <li class="collection">\n                      <a class="li-a" href="./page2.html">\n                        <span class="en">COLLECTION</span>\n                        <span class="ch">\u642D\u914D</span>\n                      </a>\n                    </li>\n                    <li class="campaign">\n                      <a class="li-a" href="./page3.html">\n                        <span class="en">CAMPAIGN</span>\n                        <span class="ch">\u5F62\u8C61\u7247</span>\n                      </a>\n                    </li>\n                    <li class="lookbook">\n                      <a class="li-a sp" href="./page4.html">\n                        <span class="en">LOOKBOOK</span>\n                        <span class="ch">\u4EA7\u54C1\u56FE\u518C</span>\n                        <br>\n                        <div class="lo-wrapper">\n                          <div class="lo jumpToPage11">AW 17</div>\n                          <div class="lo jumpToPage11">SS 18</div>\n                          <div class="lo jumpToPage11">AW 18</div>\n                        </div> \n                      </a>\n                    </li>\n                    <li class="brand-story">\n                      <a class="li-a" href="./page5.html">\n                        <span class="en">BRAND STORY</span>\n                        <span class="ch">\u54C1\u724C\u6545\u4E8B</span>\n                      </a>\n                    </li>\n                    <li class="projects">\n                      <a class="li-a sp" href="./page6.html">\n                        <span class="en">PROJECTS</span>\n                        <span class="ch">\u4E13\u9898</span>\n                        <br>\n                        <div class="lo-wrapper">\n                          <div class="lo jumpToPage6">\n                            <span class="inner-en">IS THAT YOU</span>\n                            <div class="los inner-ch">\u5BFB\u4EBA\u542F\u4E8B</div>\n                          </div>\n                          <div class="lo jumpToPage10">\n                            <span class="inner-en">PARENT - CHILD CLUB</span>\n                            <div class="los inner-ch">\u4EB2\u5B50\u4FF1\u4E50\u90E8</div>\n                          </div>\n                          <div class="lo jumpToPage8">\n                            <span class="inner-en">IT\'S DIFFERENT BUT FUNNY</span>\n                            <div class="los inner-ch">\u4E0D\u4E00\u6837\u624D\u597D\u73A9</div>\n                          </div>\n                        </div>\n                      </a>\n                    </li>\n                    <li class="contact">\n                      <a class="li-a" href="./page9.html">\n                        <span class="en">CONTACT</span>\n                        <span class="ch">\u8054\u7CFB\u6211\u4EEC</span>\n                      </a>\n                    </li>\n                    <li class="stores">\n                      <a class="li-a" href="http://www.jnbygroup.com/address.do?p=3">\n                        <span class="en">STORES</span>\n                        <span class="ch">\u5E97\u94FA</span>\n                      </a>\n                    </li></ul>\n                    <div class="ballon">\n                      <span class="one"></span>\n                      <span class="two"></span>\n                      <span class="three"></span>\n                      </div>\n                  </nav>';
   f.innerHTML = '<ul class="f">\n                    <li>@ 2018 Pomme de terre</li>\n                    <li><a href="https://www.instagram.com/pommedeterre__/" target="_self"></a>INSTAGRAM</li>\n                    <li><a href="https://weibo.com/pommedeterre2016?refer_flag=1005055014_" target="_self">WEIBO</a></li>\n                    <li><a href="https://mp.weixin.qq.com/s/tlS237QVGdbeDb-taD86Hg" target="_self">WECHAT</a></li>\n                 </ul>';
   header.appendChild(h);
   footer.appendChild(f);
@@ -133,18 +137,7 @@ window.onload = function () {
 
   // page2页的图片效果
   (0, _page2.default)();
-
-  // 链接跳转
-  document.getElementsByClassName('jumpToPage8')[0].onclick = function (e) {
-    e.stopPropagation();
-    e.preventDefault();
-    window.open('./page8.html', '_self');
-  };
-  document.getElementsByClassName('jumpToPage7')[0].onclick = function (e) {
-    e.stopPropagation();
-    e.preventDefault();
-    window.open('./page7.html', '_self');
-  };
+  (0, _href2.default)();
 };
 
 /***/ }),
@@ -173,7 +166,7 @@ function page2() {
         toggleClass(document.querySelector('#page2 .img-group-left'), 'img1', 'img2');
         toggleClass(document.querySelector('#page2 .img-group-right'), 'img3', 'img4');
     }, 7000);
-    if (document.querySelector('#page2 .btn-left')) {
+    if (document.querySelector('#page2 .btn-left') && document.querySelector('#page2 .btn-right')) {
         document.querySelector('#page2 .btn-left').onclick = prev;
         document.querySelector('#page2 .btn-right').onclick = next;
     }
@@ -217,6 +210,50 @@ function next() {
             page2();
         }, 1050);
     }, 50);
+}
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = href;
+function href() {
+    // 链接跳转
+    document.getElementsByClassName('jumpToPage8')[0] ? document.getElementsByClassName('jumpToPage8')[0].onclick = function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+        window.open('./page8.html', '_self');
+    } : '';
+
+    document.getElementsByClassName('jumpToPage7')[0] ? document.getElementsByClassName('jumpToPage7')[0].onclick = function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+        window.open('./page7.html', '_self');
+    } : '';
+
+    document.getElementsByClassName('jumpToPage6')[0] ? document.getElementsByClassName('jumpToPage6')[0].onclick = function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+        window.open('./page6.html', '_self');
+    } : '';
+
+    document.getElementsByClassName('jumpToPage10')[0] ? document.getElementsByClassName('jumpToPage10')[0].onclick = function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+        window.open('./page10.html', '_self');
+    } : '';
+
+    document.getElementsByClassName('jumpToPage11')[0] ? document.getElementsByClassName('jumpToPage11')[0].onclick = function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+        window.open('./page11.html', '_self');
+    } : '';
 }
 
 /***/ })

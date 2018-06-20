@@ -18,4 +18,16 @@ export default function href() {
         window.open('./page6.html', '_self')
     } : ''
 
+    document.getElementsByClassName('jumpToPage10')[0] ? document.getElementsByClassName('jumpToPage10')[0].onclick = function (e) {
+        e.stopPropagation()
+        e.preventDefault()
+        window.open('./page10.html', '_self')
+    } : ''
+
+    document.getElementsByClassName('jumpToPage11')[0] ? document.getElementsByClassName('jumpToPage11')[0].onclick = function (e) {
+        e.stopPropagation()
+        e.preventDefault()
+        window.open('./page11.html', '_self')
+    } : ''
+
 }
