@@ -1,300 +1,82 @@
 html {
-  font-size: 100px;
-  @media only screen and (max-width: 1280px) {
-    font-size: 40px;
-  }
-  @media only screen and (max-width: 1000px) {
-    font-size: 30px;
-  }
   font-family: PingFang SC, PingFangSC-Semibold, Helvetica Neue, Helvetica, Nimbus Sans L, Arial, Liberation Sans, Hiragino Sans GB, Source Han Sans CN, Source Han Sans SC, Microsoft YaHei, SimHei, sans-serif;
+  font-size: 100px;
 }
-
-.header {
-  position: relative;
-  .nav {
-    padding: 32px 0 0 44px;
-    color: #fff;
-    ul {
-      font-size: 0;
-      li {
-        float: left;
-        margin-right: 20px;
-        font-size: 12px;
-        font-family: AkzidenzGrotesk-MediumExtended;
-        .lo-wrapper {
-          display: none;
-        }
-        &:hover {
-          font-family: AkzidenzGrotesk-BoldExtended;
-          .en {
-            display: none;
-          }
-          .ch {
-            display: inline-block;
-          }
-        }
-        &.lookbook, &.projects {
-          &:hover {
-            .lo-wrapper {
-              display: block;
-              position: absolute;
-              top: 10px;
-              left: 0;
-              z-index: 200;
-              .lo {
-                padding-top: 8px;
-                display: block;
-                line-height: 1.3;
-                &:hover {
-                  .inner-en {
-                    display: none;
-                  }
-                  .inner-ch {
-                    display: inline-block;
-                    font-family: AkzidenzGrotesk-BoldExtended;
-                  }
-                }
-              }
-              .lo:hover, .los:hover {
-                font-family: AkzidenzGrotesk-BoldExtended;
-              }
-              .inner-en {
-                display: inline-block;
-              }
-              .inner-ch {
-                display: none;
-              }
-            }
-          }
-        }
-        &.collection {
-          width: 95px;
-        }
-        &.campaign {
-          width: 81px;
-        }
-        &.lookbook {
-          width: 84px;
-        }
-        &.brand-story {
-          width: 108px;
-        }
-        &.projects {
-          width: 74px;
-        }
-        &.contact {
-          width: 71px;
-        }
-        &.stores {
-          width: 59px;
-        }
-        @media only screen and (max-width: 1200px) {
-          font-size: 12px;
-        }
-        @media only screen and (max-width: 768px) {
-          &.lookbook:hover {
-            .lo-wrapper {
-              top: 20px;
-              left: 40px;
-            }
-          }
-          &.projects:hover {
-            .lo-wrapper {
-              top: 20px;
-              left: -50px;
-              text-align: center;
-            }
-          }
-        }
-      }
-    }
-    .li-a {
-      white-space: nowrap;
-      text-decoration: none;
-      color: #fff;
-      cursor: pointer;
-      vertical-align: middle;
-      display: inline-block;
-      position: relative;
-      .en {
-        display: inline-block;
-      }
-      .ch {
-        width: 100%;
-        display: none;
-      }
-      .lo-wrapper {
-        text-align: left;
-      }
-    }
-
-    @media only screen and (max-width: 1200px) {
-      padding: 32px 0 0 44px;
-    }
-
-    @media only screen and (max-width: 768px) {
-      padding: 0;
-      z-index: 2;
-      position: fixed;
-      top: 0px;
-      left: 0;
-      right: 0;
-      ul {
-        transition: transform .3s ease-in-out;
-        transform: translate3d(0, -100%, 0);
-        &.down {
-          transform: translate3d(0, 0, 0);
-        }
-        overflow: hidden;
-        li {
-          margin-right: 0;
-          font-size: 17px;
-          height: 30px;
-          line-height: 30px;
-          background-color: rgba(0, 0, 0, .5);
-          color: #fff;
-          text-align: center;
-          width: 100% !important;
-          &.sp {
-            height: 90px;
-          }
-          .lo-wrapper {
-            display: none;
-          }
-          &:hover {
-            .lo-wrapper {
-              display: none !important;
-            }
-          }
-          .lo {
-            display: none;
-            &.sp {
-              display: block;
-              width: 100%;
-              height: 30px;
-              color: #fff;
-              .spHidden {
-                display: none;
-              }
-              a {
-                display: block;
-                width: 100%;
-                height: 30px;
-                color: #fff;
-                font-size: 17px;
-              }
-            }
-          }
-          &.projects {
-            width: 100%;
-          }
-        }
-      }
-    }
-  }
-
-  .ballon {
-    width: 40px;
-    height: 40px;
-    border-radius: 6px;
-    background-color: #f2f4f7;
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    box-sizing: border-box;
-    padding: 10px 8px;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: column nowrap;
-    opacity: 0;
-    @media only screen and (max-width: 768px) {
-      opacity: .8;
-    }
-    span {
-      display: inline-block;
-      width: 100%;
-      height: 2px;
-      background-color: rgba(0, 0, 0, .5);
-      transition: all .3s linear;
-      transform-origin: 0 1px;
-    }
-    &.active {
-      .one {
-        transform: translateY(-2px) rotate(45deg);
-        width: 33px;
-      }
-      .two {
-        opacity: 0;
-      }
-      .three {
-        transform: translateY(2px) rotate(-45deg);
-        width: 33px;
-      }
-    }
-  }
-
-  .logo {
-    position: absolute;
-    top: 32px;
-    right: 59px;
-    width: 233px;
-    height: 80px;
-    z-index: 200;
-    transition: all .3s linear;
-    @media only screen and (max-width: 1200px) {
-      top: 16px;
-      right: 30px;
-      width: 117px;
-      height: 40px;
-    }
-    @media only screen and (max-width: 860px) {
-      display: none;
-    }
-  }
+a {
+  text-decoration: none;
 }
-
-.footer {
-  text-align: center;
-  margin-top: 70px;
-  margin-bottom: 30px;
-  font-family: AkzidenzGrotesk-MediumExtended;
-  .f {
-    display: inline-block;
-    font-size: 17px;
-    color: #000;
-    li {
-      float: left;
-      margin-right: 115px;
-      width: 150px;
-      white-space: nowrap;
-      cursor: pointer;
-      &:hover {
-        font-family: AkzidenzGrotesk-BoldExtended;
-      }
-      &:last-child {
-        margin-right: 0;
-      }
-      @media only screen and (max-width: 800px) {
-        width: 90px;
-        margin-right: 20px;
-      }
-    }
-  }
-  @media only screen and (max-width: 1200px) {
-    margin-top: 35px;
-    margin-bottom: 17px;
-    .f {
-      font-size: 12px;
-      li {
-        margin-right: 60px;
-      }
-    }
-  }
-  @media only screen and (max-width: 800px) {
-    display: none;
-  }
-}
-
-.hide {
+.hidden {
   display: none;
 }
+header {
+  padding: .7rem 0 0 .96rem;
+  font-size: 0;
+  div {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: .68rem;
+    font-size: .23rem;
+    position: relative;
+    a {
+      color: #fff;
+      font-family: avian-bold;
+    }
+    .child {
+      display: block;
+      margin: 0;
+      margin-top: 8px;
+      font-family: avian-bold;
+      color: #fff;
+      width: 100%;
+
+
+    }
+    &.campaigns {
+      .child {
+        display: none;
+      }
+      &:hover {
+        .child {
+          display: block;
+          &:hover {
+            a {
+              color: #ebc134;
+            }
+          }
+        }
+      }
+    }
+    &.collections {
+      .child {
+        display: none;
+      }
+      &:hover {
+        .child {
+          display: block;
+          &:hover {
+            a {
+              color: #ebc134;
+            }
+          }
+        }
+      }
+    }
+    &.projects {
+      width: 1.42rem;
+      .child {
+        display: none;
+      }
+      &:hover {
+        .child {
+          display: block;
+          &:hover {
+            a {
+              color: #ebc134;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
